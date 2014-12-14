@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnSendMailClicked(sender: UIButton) {
+        // --If any of the name textbox or message textbox is filled
         if((txtMessage.text != "") || (txtName.text != "")) {
             lblMessage.hidden = false;
             lblMessage.text = "Name: " + txtName.text + "\nMessage: " + txtMessage.text;
